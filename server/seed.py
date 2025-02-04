@@ -22,13 +22,13 @@ with app.app_context():
     db.session.commit()
 
     db.session.add(Review(comment="zipper broke the first week",
-                   customer=customer1, item=item1))
+                   customer_id=customer1.id, item_id=item1.id))
     db.session.add(Review(comment="love this backpack!",
-                   customer=customer2, item=item1))
+                   customer_id=customer2.id, item_id=item1.id))
     db.session.add(Review(comment="coffee stays hot for hours!",
-                   customer=customer1, item=item2))
+                   customer_id=customer1.id, item_id=item2.id))
     db.session.add(Review(comment="best coffee mug ever!",
-                   customer=customer3, item=item2))
+                   customer_id=customer3.id, item_id=item2.id))
     db.session.add(Review(comment="cable too short",
-                   customer=customer3, item=item3))
+                   customer_id=customer3.id, item_id=item3.id))
     db.session.commit()
